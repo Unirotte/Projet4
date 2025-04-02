@@ -1,5 +1,12 @@
 $color-mix: background linear-gradient(156deg, rgba(244,118,218,1) 8%, rgba(147,86,220,1) 100%);
 $shadow: 0px 4px 15px 0px #0000001A;
+$white: white;
+$shadow_button: 0px 4px 10px 0px rgba(0, 0, 0, 0.1019607843);
+
+@mixin font_base {
+font-size: 24px;
+font-weight: 700;
+}
 
 @mixin button-style {
     height: 50px;
@@ -12,63 +19,271 @@ $shadow: 0px 4px 15px 0px #0000001A;
 
 
 @mixin button__text{
-    color:white;
+    color:$white;
     font-size:16px;
     font-weight: 500;}
 
-.navBarre {
-    background: #EAEAEA;
-    width: 375px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
-}
-.logo {
-    background-color: white;
-    width: 375px;
-    height: 63px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+h1 {
+  @include font_base;
+  padding: 0px 40px 0px 40px;
 }
 
-.button__header {
-@include button-style;
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h3 {
+@include font_base;
+  padding-left: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0px;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+
+h6 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+/* BODY */
+
+body {
+  background-color: var(--main-backgroud);
+  margin: 0px;
+  width: 100%;
+a {
+  color:$white;
+  text-decoration: none;
+ }
+}
+
+/* header */
+
+.header__logo {
+  padding: 20px 0 10px 0;
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  justify-content: center;
+  position: relative;
+
+.header__img--logo {
+  width: 197px;
+  height: 36px;
+ }
+}
+
+.navBarre {
+  gap: 15px;
+  background: #EAEAEA;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__text {
+  text-align: center;
+  padding: 20px 0px 50px 0px;
+}
+
+.flex__btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.btn__header{
+  @include button-style;
   width: 218px;
 @include button__text;
-  }  
+ box-shadow: $shadow_button;
 
-
-.button__page {
-@include button-style;
-  width: 158px;
-  @include button__text;
-  
+.btn__header:hover {
+background: linear-gradient(156deg, rgba(244, 118, 218, 1) 8%, rgba(147, 86, 220, 1) 150%);
+box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+ }
 }
 
 
-.contenaire{
-    width: 346px;
-    height: 251px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: $shadow;
+/* Fonctionnement */
 
-.contenaire__img{
-    height: 70%;
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
+section.Fonctionnement {
+  background-color: white;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  .contenaire__text{
-    line-height: 0px;
-    padding-left: 15px;
-    
+.contenaire_position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+
+.contenaire_fonctionnement {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  width: 300px;
+  height: 72px;
+  display: flex;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+
+.rond {
+  display: flex;
+    background: #9356dc;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: -14px;
+    color: white;
+    font-size: 14px;
+   
+   }
   }
-  
+ }
 }
+
+/*contenaires restaurant*/
+section.restaurant {
+  padding: 20px 0px 80px 0px;
+.restaurant_contenaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+ }
+}
+
+
+.new {
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 250px;
+  top: 14px;
+  z-index: 10;
+  }
+
+.contenaire {
+  position: relative; 
+  width: 340px;
+  height: 231px;
+  border-bottom: solid white;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+.contenaire__img {
+  height: 70%;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  object-fit: cover;
+ }
+}
+
+  .contenaire_restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 23px 0px 0px;
+.contenaire__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 0px;
+  padding: 0px 0px 11px 15px;
+ }
+}
+
+/* Check heart */
+
+.heart {
+  position: relative;
+  display: inline-block;
+/* Cache le bouton */
+.checkbox_heart {
+  display: none;
+ }
+}
+
+/* place le bouton coeur plein */
+.button_coeur {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+/* défini les propriété de l'animation et la couleur ainsi que la taille */
+.button_coeur .fa-solid {
+  position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 1.6em;
+    width: 36px;
+    height: 32px;
+    display: flex;
+    background: linear-gradient(156deg, #f476da 8%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    justify-content: center;
+/* Rend le coeur apparent au click  */
+.checkbox_heart:checked + .button_coeur .fa-solid {
+  opacity: 1;
+ }
+}
+
+/* Footer */
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 5px 0px 5px 0px;
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+  
+li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  }
+ }
 }
