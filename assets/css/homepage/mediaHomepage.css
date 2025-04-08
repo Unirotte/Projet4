@@ -1,0 +1,54 @@
+@media (min-width: 768px) and (max-width: 1900px)  {
+    h1 {
+
+        font-size: 40px;
+        
+    }
+
+    h3 {
+    
+        padding-left: 12%;
+    }
+
+    section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
+        
+        width: 335px; 
+    }
+
+    section.Fonctionnement .contenaire_position {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 10px;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    section.restaurant .restaurant_contenaire {
+
+        flex-direction: row;
+        gap: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenaire {
+    
+        width: 490px;
+        height: 251px;
+        
+    }
+
+    footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        justify-content: flex-start;
+        padding-right: 50px;
+    }
+
+}
+
+
