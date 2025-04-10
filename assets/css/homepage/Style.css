@@ -40,7 +40,7 @@ h3 {
 
   font-size: 24px;
   font-weight: 700;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 h4 {
@@ -68,7 +68,8 @@ h6 {
 /* header */
 
 .header__logo {
-  padding: 20px 0 10px 0;
+  height: 63px;
+  align-items: center;
   display: flex;
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
@@ -147,7 +148,7 @@ section.Fonctionnement .contenaire_position {
 section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
   background-color: #F6F6F6;
   border-radius: 20px;
-  width: 300px;
+  width: 80vw;
   height: 72px;
   display: flex;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
@@ -177,6 +178,7 @@ section.restaurant {
 }
 
 section.restaurant .restaurant_contenaire {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,14 +197,14 @@ section.restaurant .restaurant_contenaire {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 250px;
+  left: 60vw;
   top: 14px;
   z-index: 10;
 }
 
 .contenaire {
   position: relative;
-  width: 340px;
+  width: 85vw;
   height: 231px;
   border-bottom: solid white;
   border-radius: 15px;
@@ -276,24 +278,39 @@ section.restaurant .restaurant_contenaire {
   opacity: 1;
 }
 
-/* Footer */
+
+
+/* FOOTER2 */
 
 footer {
   background-color: #353535;
   color: white;
-  padding: 5px 0px 5px 0px;
-}
-
-footer ul {
-  list-style: none;
+  width: 100%;
+  height: 186px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-footer ul li {
-  display: flex;
-  gap: 10px;
   align-items: center;
 }
+footer article.footer__article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-left: 20px;
+  gap: 8px;
+}
 
+.possibility {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.possibility a i {
+  margin-right: 8px;
+}
+
+.légality {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

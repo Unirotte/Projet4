@@ -1,18 +1,40 @@
-@media (min-width: 768px) and (max-width: 1900px)  {
+/* GENERAL */
+
+/*Grand écran*/
+
+@media (min-width: 1024px) {
+    
     h1 {
 
         font-size: 40px;
-        
+
+    }
+    
+    h3 {
+        padding-left: 12vw;
     }
 
-    h3 {
-    
-        padding-left: 12%;
+    .new {
+        left: 74%;
+        width: 22%;
+        height: 13%;
     }
+
+    /* HEADER */
+
+    .header__logo {
+        height: 96px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /*Fonction*/
 
     section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
-        
-        width: 335px; 
+
+        width: 23.4%;
     }
 
     section.Fonctionnement .contenaire_position {
@@ -22,33 +44,145 @@
         align-items: center;
         padding-left: 10px;
         justify-content: center;
-        gap: 25px;
+        gap: 40px;
     }
 
-    section.restaurant .restaurant_contenaire {
+    section.Fonctionnement {
 
+        height: 228px;
+    }
+
+    /* RESTAURANT */
+
+    section.restaurant .restaurant_contenaire {
+        display: flex;
         flex-direction: row;
-        gap: 100px;
+        align-items: center;
+        gap: 50px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .contenaire {
-    
-        width: 490px;
-        height: 251px;
-        
+
+        width: 36vw;
+        height: 16vw;
+
     }
 
-    footer ul {
-        list-style: none;
-        display: flex;
+    /* FOOTER */
+    footer {
         flex-direction: row-reverse;
-        gap: 20px;
-        justify-content: flex-start;
+        height: 114px;
+        padding-top: 30px;
+    }
+
+    footer article.footer__article {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 80px;
+        padding-right: 70px;
+
+    }
+
+    .contenu_footer {
+
+        display: flex;
+
+    }
+
+    .légality {
+
+        flex-direction: row;
+
+    }
+
+    .possibility {
         padding-right: 50px;
+        flex-direction: row;
+
     }
 
 }
 
+/*Petits écrans*/
+
+@media (min-width: 375px) and (max-width: 1023px) {
+    h1 {
+
+        font-size: 24px;
+
+    }
+    h3 {
+
+        padding-left: 7vw;
+    }
+
+    .new {
+
+        left: 74%;
+        width: 22%;
+        height: 13%;
+    }
+
+    /*RESTAURANT*/
+
+    .contenaire_restaurant {
+
+        margin-top: -4px;
+    }
+
+    section.restaurant .restaurant_contenaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
+
+        
+    }
+
+}
+
+/*FIN GENERAL*/
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .contenaire_restaurant .contenaire__text {
+        
+        margin-top: -5px; 
+    }
+
+   
+}
+
+@media (min-width: 1161px) and (max-width: 1199px) {
+
+    h3 {
+        padding-left: 11vw;
+    }
+
+    .contenaire_restaurant .contenaire__text {
+        
+        margin-top: -9px; 
+    }
+   
+
+}
+
+@media (min-width: 1024px) and (max-width: 1160px) {
+
+    h3 {
+        padding-left: 11vw;
+    }
+        
+    .contenaire_restaurant .contenaire__text {
+        
+        margin-top: -1vw; 
+    }
+        
+}
 
