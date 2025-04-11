@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/homepage/Style.css">
     <link rel="stylesheet" href="../assets/css/LaPaletteduGout/LaPalette.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +21,8 @@
 
 <body>
     <header>
-        <div class="header__logo">
+        
+        <div class="header__logo"><a href="Accueil.html"><i class="fa-solid fa-arrow-up fa-rotate-270 fa-lg" style="color: #1f1f1f;"></i></a>
             <a href="../assets/img-text/images/logo/ohmyfood.png" alt="Logo OhMyFood">
                 <img class="header__img--logo " src="../assets/img-text/images/logo/ohmyfood.png">
             </a>
@@ -29,8 +31,8 @@
             <img class="fond-header"
                 src="../assets/img-text/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
         </section>
-    </header>
-    <section class="menu">
+    
+        <section class="title_restaurant">
 
         <div class="title-menu">
             <h1>La Palette du Goût</h1>
@@ -42,57 +44,112 @@
                 </label>
             </div>
         </div>
-
-        <section class="Entrees">
-            <h2>ENTRÉES</h2>
-
-            <div class="contenaire-menu" id="pice1">
-                <h3>fricassée d'escargots</h3>
-                <h4>au piment d'Espelette <div class="price">25<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-            <div class="contenaire-menu" id="pice2">
-                <h3>Foie gras de canard mi-cuit</h3>
-                <h4>Et ses copeaux de truffe noire<div class="price">35<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-            <div class="contenaire-menu" id="pice3">
-                <h3>Oeuf au plat</h3>
-                <h4>Assaisonné à la truffe sur lit de caviar<div class="price">20<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-        </section>
-
-        <section class="Plats ">
-            <h2>PLATS</h2>
-
-            <div class="contenaire-menu" id="pice1">
-                <h3>Filet de bœuf aux herbes</h3>
-                <h4>Accompagné de sa ribambelle de légumes<div class="price">40<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-            <div class="contenaire-menu" id="pice2">
-                <h3>Parmentier de queue de bœuf</h3>
-                <h4>À la truffe noire sur sa purée de panais<div class="price">35<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-            <div class="contenaire-menu" id="pice3">
-                <h3>Filet de turbot</h3>
-                <h4>Aux agrumes<div class="price">44<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-        </section>
-        
-        <section class="desserts ">
-            <h2>DESSERTS</h2>
-
-            <div class="contenaire-menu" id="pice1">
-                <h3>Paris-Brest</h3>
-                <h4>Revisité<div class="price">18<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-            <div class="contenaire-menu" id="pice2">
-                <h3>Macaron au chocolat d'exception</h3>
-                <h4>Et glace à la vanille de Madagascar<div class="price">22<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-            <div class="contenaire-menu" id="pice3">
-                <h3>Mousse au chocolat </h3>
-                <h4>Au piment d'Espelette et à la truffe noire<div class="price">23<i class="fa-solid fa-euro-sign fa-sm"></i></div></h4>
-            </div>
-        </section>
-
     </section>
+    </header>
+
+   <section class="choice">
+    
+    <section class="Entrees">
+        <h2>ENTRÉES</h2>
+<div class="position-menu">
+        <div class="contenaire-menu" id="Entrees1">
+            <h3>fricassée d'escargots</h3>
+            <h4>au piment d'Espelette</h4> <div class="price">25<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        <div class="contenaire-menu" id="Entrees2">
+            <h3>Foie gras de canard mi-cuit</h3>
+            <h4>Et ses copeaux de truffe noire</h4><div class="price">35<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        <div class="contenaire-menu" id="Entrees3">
+            <h3>Oeuf au plat</h3>
+            <h4>Assaisonné à la truffe sur lit de caviar</h4><div class="price">20<i
+                        class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+    </div>
+    </section>
+
+    <section class="Plats ">
+        <h2>PLATS</h2>
+        <div class="position-menu">
+        <div class="contenaire-menu" id="Plats1">
+            <h3>Filet de bœuf aux herbes</h3>
+            <h4>Accompagné de sa ribambelle de légumes</h4><div class="price">40<i
+                        class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        <div class="contenaire-menu" id="Plats2">
+            <h3>Parmentier de queue de bœuf</h3>
+            <h4>À la truffe noire sur sa purée de panais</h4><div class="price">35<i
+                        class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        <div class="contenaire-menu" id="Plats3">
+            <h3>Filet de turbot</h3>
+            <h4>Aux agrumes</h4><div class="price">44<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        </div>
+    </section>
+
+    <section class="desserts ">
+        <h2>DESSERTS</h2>
+        <div class="position-menu">
+        <div class="contenaire-menu" id="desserts1">
+            <h3>Paris-Brest</h3>
+            <h4>Revisité</h4><div class="price">18<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        <div class="contenaire-menu" id="desserts2">
+            <h3>Macaron au chocolat d'exception</h3>
+            <h4>Et glace à la vanille de Madagascar</h4><div class="price">22<i class="fa-solid fa-euro-sign fa-sm"></i>
+                </div>
+            </h4>
+        </div>
+        <div class="contenaire-menu" id="desserts3">
+            <h3>Mousse au chocolat </h3>
+            <h4>Au piment d'Espelette et à la truffe noire</h4><div class="price">23<i
+                        class="fa-solid fa-euro-sign fa-sm"></i></div>
+            </h4>
+        </div>
+        </div>
+    </section>
+</section>
+
+<Section class="flex__btn">
+    <div class="btn">
+        <a href="#Restaurants">Commander</a>
+    </div>
+</section>
+
+        <footer>
+            <article class="footer__article">
+    
+                <div class="logo_footer">
+                    <h6>Ohmyfood</h6>
+                </div>
+    <div class="contenu_footer">
+                <div class="possibility">
+                    <a href="#">
+                        <i class="fa-solid fa-utensils fa-sm" style="color: #ffffff;"></i>Proposer un restaurant
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-handshake-angle fa-2xs" style="color: #ffffff;"></i>Devenir partenaire
+                    </a>
+                </div>
+    
+                <div class="légality">
+                    <a href="#">
+                        Mentions légale
+                    </a>
+                    <a href="#">
+                        Contact
+                    </a>
+                </div>
+    </div>
+            </article>
+        </footer>
 </body>
+</html>

@@ -1,0 +1,174 @@
+/* CECI EST UN FICHIER DE CLASS GENERAL*/
+
+/*GENERAL BODY*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*FIN GENERAL BODY*/
+
+/*FONT*/
+
+* {
+    font-family: "roboto";
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h5 {
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/*FIN FONT*/
+
+/*Les buttons*/
+
+/* HEART */
+
+.heart {
+    position: relative;
+    display: inline-block;
+}
+
+/* Cache le bouton */
+.heart .checkbox_heart {
+    display: none;
+}
+
+/* place le bouton coeur plein */
+.button_coeur {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* défini les propriété de l'animation et la couleur ainsi que la taille */
+.button_coeur .fa-solid {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 1.6em;
+    width: 36px;
+    height: 32px;
+    display: flex;
+    background: linear-gradient(156deg, #f476da 8%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rend le coeur apparent au click  */
+.checkbox_heart:checked+.button_coeur .fa-solid {
+    opacity: 1;
+}
+
+/*FIN HEART*/
+
+
+/*BUTTON*/
+
+.flex__btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.btn {
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(156deg, rgb(244, 118, 218) 8%, rgb(147, 86, 220) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1019607843);
+}
+
+.btn:hover {
+
+    background: linear-gradient(156deg, rgba(244, 118, 218, 1) 8%, rgba(147, 86, 220, 1) 150%);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+}
+
+/*FIN BUTTON*/
+
+/*FIN DES BUTTONS*/
+
+/*LES GENERALES*/
+
+/*HEADER*/
+
+.header__logo {
+    align-items: center;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+    justify-content: center;
+    position: relative;
+}
+
+.header__logo .header__img--logo {
+    width: 197px;
+    height: 36px;
+}
+
+/*FIN HEADER*/
+
+/* FOOTER */
+
+footer {
+    background-color: #353535;
+    color: white;
+    width: 100%;
+    height: 186px;
+    display: flex;
+    align-items: center;
+}
+
+footer article.footer__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    gap: 8px;
+}
+
+.possibility {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.possibility a i {
+    margin-right: 8px;
+}
+
+.légality {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h6 {
+    font-family: "Shrikhand";
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px;
+    padding-bottom: 5px;
+}
+
+/* FIN FOOTER */
