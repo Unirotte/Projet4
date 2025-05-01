@@ -1,0 +1,35 @@
+@media (min-width: 1024px) {
+   
+    footer {
+        flex-direction: row-reverse;
+        height: 114px;
+        padding-top: 30px;
+    }
+
+    footer article.footer__article {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 80px;
+        padding-right: 70px;
+
+    }
+
+    .contenu_footer {
+
+        display: flex;
+
+    }
+
+    .légality {
+
+        flex-direction: row;
+
+    }
+
+    .possibility {
+        padding-right: 50px;
+        flex-direction: row;
+
+    }
+
+}
