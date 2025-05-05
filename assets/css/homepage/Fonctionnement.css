@@ -1,66 +1,61 @@
 /* Fonctionnement */
 section.Fonctionnement {
-    background-color: white;
-    width: 100%;
-    height: 420px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.Fonctionnement .contenaire_position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+}
+
+section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  width: 80vw;
+  height: 72px;
+  display: flex;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+section.Fonctionnement .contenaire_position .contenaire_fonctionnement .rond {
+  display: flex;
+  background: #9356dc;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: -14px;
+  color: white;
+  font-size: 14px;
+}
+
+/*MEDIA*/
+@media (min-width: 1024px) {
+  section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
+    width: 23.4%;
   }
   section.Fonctionnement .contenaire_position {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 10px;
-  }
-  section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
-    background-color: #F6F6F6;
-    border-radius: 20px;
-    width: 80vw;
-    height: 72px;
-    display: flex;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    gap: 20px;
-  }
-  section.Fonctionnement .contenaire_position .contenaire_fonctionnement .rond {
-    display: flex;
-    background: #9356dc;
-    height: 24px;
-    width: 24px;
-    border-radius: 100%;
-    align-items: center;
+    padding-left: 10px;
     justify-content: center;
-    margin-left: -14px;
-    color: white;
-    font-size: 14px;
+    gap: 40px;
   }
-
-  /*MEDIA*/
-
-  @media (min-width: 1024px) {
-
-
-    section.Fonctionnement .contenaire_position .contenaire_fonctionnement {
-
-        width: 23.4%;
-    }
-
-    section.Fonctionnement .contenaire_position {
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 10px;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    section.Fonctionnement {
-
-        height: 228px;
-    }
-}
+  section.Fonctionnement {
+    height: 228px;
+  }
+}/*# sourceMappingURL=fonctionnement.css.map */

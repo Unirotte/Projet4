@@ -1,0 +1,154 @@
+section.restaurant {
+    padding: 20px 0px 80px 0px;
+  }
+  section.restaurant .restaurant_contenaire {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  .new {
+    width: 80px;
+    height: 29px;
+    background-color: #99E2D0;
+    color: #008766;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 60vw;
+    top: 14px;
+    z-index: 10;
+  }
+  
+  .contenaire {
+    position: relative;
+    width: 85vw;
+    height: 231px;
+    border-bottom: solid white;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  }
+  .contenaire .contenaire__img {
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    object-fit: cover;
+  }
+  
+  .contenaire_restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 23px 0px 0px;
+  }
+  .contenaire_restaurant .contenaire__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    padding: 0px 0px 11px 15px;
+  }
+  
+  .contenaire__text__note {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+  }
+
+  /*MEDIA*/
+
+ 
+
+@media (min-width: 375px) and (max-width: 1023px) {
+
+
+    .contenaire_restaurant {
+
+        margin-top: -4px;
+    }
+
+    section.restaurant .restaurant_contenaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .new {
+
+        left: 74%;
+        width: 22%;
+        height: 13%;
+    }
+
+}
+
+ @media (min-width: 1024px) {
+
+    section.restaurant .restaurant_contenaire {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenaire {
+
+        width: 36vw;
+        height: 16vw;
+
+    }
+
+    .new {
+        left: 74%;
+        width: 22%;
+        height: 13%;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .contenaire_restaurant .contenaire__text {
+        
+        margin-top: -5px; 
+    }
+
+   
+}
+
+
+@media (min-width: 1161px) and (max-width: 1199px) {
+
+
+    .contenaire_restaurant .contenaire__text {
+        
+        margin-top: -9px; 
+    }
+   
+
+}
+
+@media (min-width: 1024px) and (max-width: 1160px) {
+
+        
+    .contenaire_restaurant .contenaire__text {
+        
+        margin-top: -1vw; 
+    }
+        
+}

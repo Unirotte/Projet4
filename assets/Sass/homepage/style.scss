@@ -16,33 +16,53 @@ h4 {
   padding: 0px;
 }
 
-body {
-  background-color: #f6f6f6;
+
+body { 
+  background-color: #f6f6f6; 
 }
 
 @media (min-width: 1024px) {
+    
   h1 {
-    font-size: 40px;
+
+      font-size: 40px;
+
   }
+  
   h3 {
-    padding-left: 12vw;
+      padding-left: 12vw;
   }
+
+
 }
+
+
 @media (min-width: 375px) and (max-width: 1023px) {
   h1 {
-    font-size: 24px;
+
+      font-size: 24px;
+
   }
   h3 {
-    padding-left: 7vw;
+
+      padding-left: 7vw;
   }
+
 }
+
+
 @media (min-width: 1161px) and (max-width: 1199px) {
+
   h3 {
-    padding-left: 11vw;
+      padding-left: 11vw;
   }
+
 }
+
 @media (min-width: 1024px) and (max-width: 1160px) {
+
   h3 {
-    padding-left: 11vw;
+      padding-left: 11vw;
   }
-}/*# sourceMappingURL=style.css.map */
+      
+}
