@@ -60,7 +60,7 @@ h5 {
 .flex__btn {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  
 }
 .flex__btn .btn {
   height: 50px;
@@ -173,4 +173,9 @@ h6 {
     flex-direction: row;
   }
 }
+.operation-inner {
+  margin: auto;
+  width: 80vw;
+}
+
 /* FIN FOOTER *//*# sourceMappingURL=layout.css.map */

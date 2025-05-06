@@ -18,6 +18,10 @@
   width: 218px;
 }
 
+.flex__btn {
+  padding-top: 15px;
+}
+
 @media (min-width: 1024px) {
   .navBarre {
     box-shadow: none;

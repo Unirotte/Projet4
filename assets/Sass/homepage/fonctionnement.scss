@@ -7,10 +7,6 @@ section.operation {
   flex-direction: column;
   justify-content: center;
   
-  .operation-inner {
-    margin: 30px auto;
-    width: 80vw;
-  
     .contenaire_position {
       display: flex;
       flex-direction: column;
@@ -47,6 +43,5 @@ section.operation {
           font-size: 14px;
         }
       }
-    }
   }
 }
