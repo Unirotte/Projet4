@@ -10,8 +10,7 @@ section.restaurant {
   }
   }
   .new {
-    width: 80px;
-    height: 29px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     background-color: #99E2D0;
     color: #008766;
     font-size: 14px;
@@ -20,7 +19,6 @@ section.restaurant {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 60vw;
     top: 14px;
     z-index: 10;
   }
@@ -91,6 +89,7 @@ section.restaurant {
         left: 74%;
         width: 22%;
         height: 13%;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     }
 
 }
@@ -117,6 +116,7 @@ section.restaurant {
         left: 74%;
         width: 22%;
         height: 13%;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
     }
 
 }
