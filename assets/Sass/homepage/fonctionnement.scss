@@ -1,47 +1,59 @@
-/* Fonctionnement */
-section.operation {
-  background-color: white;
-  width: 100%;
+@import "../reset.scss";
 
+/* Fonctionnement */
+
+section.operation {
+  background-color: $white;
+  width: 100%;
+  padding: 25px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-    .contenaire_position {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-left: 10px;
-      @media (min-width: 1024px) { 
-          flex-direction: row;
-          gap: 40px;    
-      }
-      
-      .contenaire_operation {
-        background-color: #f6f6f6;
-        border-radius: 20px;
-        width: 100%;
-        padding: 25px 0px;
-        display: flex;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        margin-bottom: 30px;
-        gap: 20px;
 
-        .rond {
-          display: flex;
-          background: #9356dc;
-          height: 24px;
-          width: 24px;
-          border-radius: 100%;
-          align-items: center;
-          justify-content: center;
-          margin-left: -14px;
-          color: white;
-          font-size: 14px;
-        }
+  .contenaire_position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    .contenaire_operation {
+      background-color: $contenaire;
+      border-radius: 20px;
+      width: 100%;
+      padding: 25px 0px;
+      display: flex;
+      box-shadow: $shadow-contenaire;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      gap: 20px;
+
+      .rond {
+        display: flex;
+        background: $purple;
+        height: 24px;
+        width: 24px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: -14px;
+        color: $white;
+        font-size: 14px;
       }
+    }
   }
+}
+
+i.fa-solid.fa-mobile-screen-button,
+i.fa-solid.fa-list {
+  color: #7e7e7e;
+}
+
+i.fa-solid.fa-shop {
+  color: $purple;
 }

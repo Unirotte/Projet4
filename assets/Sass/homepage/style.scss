@@ -1,3 +1,5 @@
+@import "../reset.scss";
+
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -17,7 +19,7 @@ h4 {
 
 
 body { 
-  background-color: #f6f6f6; 
+  background-color: $contenaire; 
 }
 
 @media (min-width: 1024px) {

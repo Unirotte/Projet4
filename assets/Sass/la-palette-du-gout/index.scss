@@ -21,7 +21,7 @@ h4 {
 
 h2 {
   margin-left: 20px;
-  border-bottom: solid 3px #99e2d0;
+  border-bottom: solid 3px $Green;
   display: inline-block;
   width: 40px;
 }
@@ -33,7 +33,8 @@ h2 {
   align-items: center;
 }
 
-/*HEADER*/
+// HEADER
+
 .header__logo {
   justify-content: center;
   position: relative;
@@ -48,27 +49,27 @@ h2 {
   position: relative;
 }
 
-/*SECTION MENU*/
+/*BACKGROUND*/
 
-article.menu {
-  margin-top: -40px;
-  padding-bottom: 24px;
+section.card-restaurant {
+  background: $contenaire;
 }
+
+// NAME RESTAURANT
 
 section.title_restaurant {
   border-radius: 24px;
-  background-color: #f6f6f6;
-  bottom: 50px;
+  background-color: $contenaire;
+  bottom: 25px;
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 0px;
   justify-content: center;
   position: relative;
-  padding: 40px 0px;
+  padding: 15px 0px;
   align-items: center;
   padding-top: 50px;
-  
 }
 
 .title-menu {
@@ -77,56 +78,18 @@ section.title_restaurant {
   gap: 35px;
 }
 
-section.card-restaurant {
-  background: #f6f6f6;
-}
+MENU
 
-/*MENU*/
-/*LES BASES*/
-
-.price {
-  font-weight: 700;
-  font-size: 15px;
+article.menu {
+  margin-top: -40px;
+  padding-bottom: 24px;
 }
-.glisse {
-  width: 100%;
-}
-.titles {
-  padding-left: 15px;
-  min-width: 50px;
-  overflow: hidden;
-  width: 100%;
-}
-
-input:not(:checked) ~ .titles h3 {
-  max-width: 60%;
-}
-input:not(:checked) ~ .titles h4 {
-  max-width: 50%;
-}
-
-.titles h3,
-.titles h4 {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-i.fa-solid.fa-circle-check {
-  color: rgb(255, 255, 255);
-}
-
-/*LES CONTENAIRES*/
-
-/*Le fond*/
 
 .Positions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .contenaire-menu {
@@ -140,11 +103,13 @@ i.fa-solid.fa-circle-check {
   align-items: center;
   margin-bottom: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: $white;
   overflow: hidden;
 }
 
-/*Le prix*/
+.glisse {
+  width: 100%;
+}
 
 .contenaire {
   position: absolute;
@@ -158,7 +123,35 @@ i.fa-solid.fa-circle-check {
   padding-bottom: 15px;
 }
 
-/*Les paramatères du bouton vert*/
+.price {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.titles {
+  padding-left: 15px;
+  min-width: 50px;
+  overflow: hidden;
+  width: 100%;
+}
+
+input:checked ~ .titles h3 {
+  max-width: 60%;
+  
+}
+input:checked~ .titles h4 {
+  max-width: 50%;
+}
+
+.titles h3,
+.titles h4 {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .check-bg-3 {
   position: absolute;
   top: 0;
@@ -168,27 +161,31 @@ i.fa-solid.fa-circle-check {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #99e2d0;
+  background-color: $Green;
   cursor: pointer;
   z-index: 1;
 }
 
-/* LES ANIMATIONS */
+i.fa-solid.fa-circle-check {
+  color: rgb(255, 255, 255);
+}
+
+// BUTTON GREEN
 
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
 }
 @keyframes back-slide {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
 }
 input:checked ~ .check-bg-3 {
@@ -198,21 +195,22 @@ input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
-/*Prix*/
+// PRIX
+
 @keyframes slide-12 {
+  from {
+    transform: translateX(230%);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+@keyframes back-slide-12 {
   from {
     transform: translateX(-40%);
   }
   to {
     transform: translateX(230%);
-  }
-}
-@keyframes back-slide-12 {
-  from {
-    transform: translateX(200%);
-  }
-  to {
-    transform: translateX(-40%);
   }
 }
 
@@ -223,7 +221,23 @@ input:not(:checked) ~ .contenaire {
   animation: back-slide-12 0.3s ease-in-out forwards;
 }
 
-/*MENU*/
+// HOVER
+
+.glisse:hover .check-bg-3 {
+  animation: slide 0.3s ease-in-out forwards;
+}
+.glisse:hover .contenaire {
+  animation: slide-12 0.3s ease-in-out forwards;
+}
+
+input:hover ~ .titles h3 {
+  max-width: 60%;
+}
+input:hover~ .titles h4 {
+  max-width: 50%;
+}
+
+//BUTTON
 
 .btn {
   width: 186px;
@@ -231,11 +245,9 @@ input:not(:checked) ~ .contenaire {
 
 .flex__btn {
   padding-bottom: 40px;
-  margin-top: -30px;
 }
 
-@media (min-width: 768px) {
-}
+// MEDIA
 
 @media (min-width: 1024px) {
   article.menu {

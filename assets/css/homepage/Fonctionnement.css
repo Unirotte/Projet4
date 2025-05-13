@@ -1,7 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Fonctionnement */
 section.operation {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 100%;
+  padding: 25px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +41,7 @@ section.operation .contenaire_position .contenaire_operation {
   width: 100%;
   padding: 25px 0px;
   display: flex;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -33,13 +50,22 @@ section.operation .contenaire_position .contenaire_operation {
 }
 section.operation .contenaire_position .contenaire_operation .rond {
   display: flex;
-  background: #9356dc;
+  background: #9356DC;
   height: 24px;
   width: 24px;
   border-radius: 100%;
   align-items: center;
   justify-content: center;
   margin-left: -14px;
-  color: white;
+  color: #FFFFFF;
   font-size: 14px;
+}
+
+i.fa-solid.fa-mobile-screen-button,
+i.fa-solid.fa-list {
+  color: #7e7e7e;
+}
+
+i.fa-solid.fa-shop {
+  color: #9356DC;
 }/*# sourceMappingURL=fonctionnement.css.map */

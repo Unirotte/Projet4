@@ -1,31 +1,28 @@
 .navBarre {
   position: relative;
-    gap: 15px;
-    background: #EAEAEA;
-    height: 50px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
+  gap: 15px;
+  background: #eaeaea;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i.fa-solid.fa-location-dot {
+    color: #353535;
   }
-  
-  .header__text {
- 
-    text-align: center;
-    padding: 20px 0px 50px 0px;
-   
-  }
-  
-  .btn {
-    width: 218px;
-  }
+}
 
-  @media (min-width: 1024px) {
-    .navBarre {
-        
-        box-shadow: none;
-    }
+.header__text {
+  text-align: center;
+  padding: 20px 0px 50px 0px;
+}
 
+.btn {
+  width: 218px;
+}
+
+@media (min-width: 1024px) {
+  .navBarre {
+    box-shadow: none;
+  }
 }
