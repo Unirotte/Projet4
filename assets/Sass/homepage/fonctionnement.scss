@@ -10,7 +10,7 @@ section.operation {
   flex-direction: column;
   justify-content: center;
 
-  .contenaire_position {
+  .container_position {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@ section.operation {
       gap: 40px;
     }
 
-    .contenaire_operation {
+    .container_operation {
       background-color: $contenaire;
       border-radius: 20px;
       width: 100%;
@@ -33,7 +33,7 @@ section.operation {
       margin-bottom: 30px;
       gap: 20px;
 
-      .rond {
+      .round {
         display: flex;
         background: $purple;
         height: 24px;

@@ -23,19 +23,19 @@ section.operation {
   flex-direction: column;
   justify-content: center;
 }
-section.operation .contenaire_position {
+section.operation .container_position {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 10px;
 }
 @media (min-width: 1024px) {
-  section.operation .contenaire_position {
+  section.operation .container_position {
     flex-direction: row;
     gap: 40px;
   }
 }
-section.operation .contenaire_position .contenaire_operation {
+section.operation .container_position .container_operation {
   background-color: #f6f6f6;
   border-radius: 20px;
   width: 100%;
@@ -48,7 +48,7 @@ section.operation .contenaire_position .contenaire_operation {
   margin-bottom: 30px;
   gap: 20px;
 }
-section.operation .contenaire_position .contenaire_operation .rond {
+section.operation .container_position .container_operation .round {
   display: flex;
   background: #9356DC;
   height: 24px;
