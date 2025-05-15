@@ -1,0 +1,42 @@
+// CECI EST UN FICHIER DE CLASS GENERAL
+
+// GENERAL BODY
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1440px) {
+  section.operation .container_position,
+  section.restaurant .restaurant_container,
+  .operation-inner{
+    margin: auto;
+    max-width: 1440px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// COLOR
+
+$Grey: #f3f3f3;
+$contenaire: #f6f6f6;
+$Green: #99e2d0;
+$grass: #008766;
+$blue: #89c8fa;
+$night: #003a68;
+$purple: #9356dc;
+$white: #ffffff;
+$black: #000000;
+$shadow-contenaire: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+$shadow-button: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);

@@ -21,7 +21,7 @@ h4 {
 
 h2 {
   margin-left: 20px;
-  border-bottom: solid 3px $Green;
+  border-bottom: solid 3px #99e2d0;
   display: inline-block;
   width: 40px;
 }
@@ -32,8 +32,6 @@ h2 {
   display: flex;
   align-items: center;
 }
-
-// HEADER
 
 .header__logo {
   justify-content: center;
@@ -50,16 +48,13 @@ h2 {
 }
 
 /*BACKGROUND*/
-
 section.card-restaurant {
-  background: $contenaire;
+  background: #f6f6f6;
 }
-
-// NAME RESTAURANT
 
 section.title_restaurant {
   border-radius: 24px;
-  background-color: $contenaire;
+  background-color: #f6f6f6;
   bottom: 25px;
   width: 100%;
   display: flex;
@@ -78,21 +73,13 @@ section.title_restaurant {
   gap: 35px;
 }
 
-MENU
-
-article.menu {
-  margin-top: -40px;
-  padding-bottom: 24px;
-}
-
 .Positions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 15px;
 }
 
-.container-menu {
+.contenaire-menu {
   position: relative;
   overflow: visible;
   width: 95%;
@@ -101,17 +88,25 @@ article.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  background-color: $white;
+  background-color: #fff;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.plat-click-zone {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .glisse {
   width: 100%;
 }
 
-.container {
+.contenaire {
   position: absolute;
   top: 0;
   right: 72px;
@@ -133,13 +128,14 @@ article.menu {
   min-width: 50px;
   overflow: hidden;
   width: 100%;
+  cursor: pointer;
 }
 
 input:checked ~ .titles h3 {
   max-width: 60%;
-  
 }
-input:checked~ .titles h4 {
+
+input:checked ~ .titles h4 {
   max-width: 50%;
 }
 
@@ -161,7 +157,7 @@ input:checked~ .titles h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $Green;
+  background-color: #99e2d0;
   cursor: pointer;
   z-index: 1;
 }
@@ -169,8 +165,6 @@ input:checked~ .titles h4 {
 i.fa-solid.fa-circle-check {
   color: rgb(255, 255, 255);
 }
-
-// BUTTON GREEN
 
 @keyframes slide {
   0% {
@@ -191,15 +185,14 @@ i.fa-solid.fa-circle-check {
 input:checked ~ .check-bg-3 {
   animation: slide 0.3s ease-in-out forwards;
 }
+
 input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
-// PRIX
-
 @keyframes slide-12 {
   from {
-    transform: translateX(230%);
+    transform: translateX(200%);
   }
   to {
     transform: translateX(-40%);
@@ -210,34 +203,32 @@ input:not(:checked) ~ .check-bg-3 {
     transform: translateX(-40%);
   }
   to {
-    transform: translateX(230%);
+    transform: translateX(200%);
   }
 }
-
-input:checked ~ .container {
+input:checked ~ .contenaire {
   animation: slide-12 0.3s ease-in-out forwards;
 }
-input:not(:checked) ~ .container {
+
+input:not(:checked) ~ .contenaire {
   animation: back-slide-12 0.3s ease-in-out forwards;
 }
-
-// HOVER
 
 .glisse:hover .check-bg-3 {
   animation: slide 0.3s ease-in-out forwards;
 }
-.glisse:hover .container {
+
+.glisse:hover .contenaire {
   animation: slide-12 0.3s ease-in-out forwards;
 }
 
 input:hover ~ .titles h3 {
   max-width: 60%;
 }
-input:hover~ .titles h4 {
+
+input:hover ~ .titles h4 {
   max-width: 50%;
 }
-
-//BUTTON
 
 .btn {
   width: 186px;
@@ -247,33 +238,26 @@ input:hover~ .titles h4 {
   padding-bottom: 40px;
 }
 
-// MEDIA
-
 @media (min-width: 1024px) {
   article.menu {
     width: 630px;
     margin: auto;
   }
-
   section.card-restaurant {
     margin: 0px 150px;
   }
-
   .fond-header {
     height: 383px;
   }
 }
-
 @media (min-width: 1440px) {
   section.card-restaurant {
     margin: 0px 150px;
   }
-
   .fond-header {
     height: 383px;
   }
 }
-
 @media (min-width: 1601px) and (max-width: 1900px) {
   section.card-restaurant {
     margin: 0px 150px;

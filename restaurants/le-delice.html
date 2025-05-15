@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
-
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
-    <link rel="stylesheet" href="../assets/css/la-palette-du-gout/index.css">
+    <link rel="stylesheet" href="../assets/css/main-restaurant.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,22 +19,19 @@
 
 <body>
     <header>
-
         <div class="header__logo">
             <a href="accueil.html" class="arrow-left">
                 <i class="fa-solid fa-arrow-up fa-rotate-270 fa-lg"></i></a>
-            <a href="../assets/img-text/images/logo/ohmyfood.png" alt="Logo OhMyFood">
-                <img class="header__img--logo " src="../assets/img-text/images/logo/ohmyfood.png">
+            <a href="accueil.html">
+                <img class="header__img--logo " src="../assets/img-text/images/logo/ohmyfood.png" alt="Logo OhMyFood">
             </a>
         </div>
-
     </header>
-
     <section>
-        <img class="fond-header" src="../assets/img-text/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+        <img class="fond-header"
+            src="../assets/img-text/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="Une assiette plateau avec du poisson">
     </section>
-
-
     <section class="card-restaurant">
         <section class="title_restaurant">
 
@@ -52,17 +46,17 @@
                 </div>
             </div>
         </section>
-
-
         <article class="menu">
             <h2>ENTRÉES</h2>
-
             <div class="Positions">
                 <div class="contenaire-menu">
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="Entrees1">
+                        <label for="Entrees1" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">25<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                25 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
                             <h3>Tartare de thon</h3>
@@ -71,32 +65,38 @@
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
-
-                <div class="contenaire-menu" id="Entrees2">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+            </div>
+            <div class="Positions">
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="Entrees2">
+                        <label for="Entrees2" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">35<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                35 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
-                            <h3>Bouchée de homard croustillant </h3>
+                            <h3>Bouchée de homard croustillant</h3>
                             <h4>Et sa farandole de petits légumes</h4>
                         </div>
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
-
-                <div class="contenaire-menu" id="Entrees3">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+            </div>
+            <div class="Positions">
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="Entrees3">
+                        <label for="Entrees3" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">20<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                20 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
                             <h3>Velouté de cèpes </h3>
@@ -105,19 +105,21 @@
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
+            </div>
         </article>
         <article class="menu">
             <h2>PLATS</h2>
-
             <div class="Positions">
-                <div class="contenaire-menu" id="Entrees1">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="plat1">
+                        <label for="plat1" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">40<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                40 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
                             <h3>Poulet rôti aux herbes de Provence </h3>
@@ -126,32 +128,38 @@
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
-
-                <div class="contenaire-menu" id="Entrees2">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+            </div>
+            <div class="Positions">
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="plat2">
+                        <label for="plat2" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">35<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                35 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
-                            <h3>Langouste rôtie</h3>
+                            <h3>Langouste rôtie </h3>
                             <h4>Et ses légumes de saison</h4>
                         </div>
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
-
-                <div class="contenaire-menu" id="Entrees3">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+            </div>
+            <div class="Positions">
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="plat3">
+                        <label for="plat3" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">44<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                44 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
                             <h3>Côte de bœuf Angus</h3>
@@ -160,19 +168,21 @@
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
+            </div>
         </article>
         <article class="menu">
             <h2>DESSERTS</h2>
-
             <div class="Positions">
-                <div class="contenaire-menu" id="Entrees1">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="dessert1">
+                        <label for="dessert1" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">18<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                18 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
                             <h3>Farandole de desserts</h3>
@@ -181,32 +191,38 @@
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
-
-                <div class="contenaire-menu" id="Entrees2">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+            </div>
+            <div class="Positions">
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="dessert2">
+                        <label for="dessert2" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">22<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                22 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
-                            <h3>Crème brulée</h3>
+                            <h3>Crème brulée </h3>
                             <h4>Revisitée</h4>
                         </div>
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
-
-                <div class="contenaire-menu" id="Entrees3">
-
-                    <label class="glisse">
-                        <input type="checkbox" hidden>
+            </div>
+            <div class="Positions">
+                <div class="contenaire-menu">
+                    <div class="glisse">
+                        <input type="checkbox" hidden id="dessert3">
+                        <label for="dessert3" class="plat-click-zone"></label>
                         <div class="contenaire">
-                            <div class="price">23<i class="fa-solid fa-euro-sign fa-sm"></i></div>
+                            <div class="price">
+                                23 <i class="fa-solid fa-euro-sign fa-sm"></i>
+                            </div>
                         </div>
                         <div class="titles">
                             <h3>Tiramisu</h3>
@@ -215,45 +231,41 @@
                         <div class="check-bg-3">
                             <i class="fa-solid fa-circle-check fa-xl"></i>
                         </div>
-                    </label>
+                    </div>
                 </div>
+            </div>
         </article>
-
         <div class="flex__btn">
             <div class="btn">
                 <a href="#Restaurants">Commander</a>
             </div>
         </div>
     </section>
-
     <footer>
         <article class="footer__article">
-
             <div class="logo_footer">
                 <h6>Ohmyfood</h6>
             </div>
             <div class="contenu_footer">
                 <div class="possibility">
                     <a href="#">
-                        <i class="fa-solid fa-utensils fa-sm" style="color: #ffffff;"></i>Proposer un restaurant
+                        <i class="fa-solid fa-utensils fa-sm"></i>Proposer un restaurant
                     </a>
                     <a href="#">
-                        <i class="fa-solid fa-handshake-angle fa-2xs" style="color: #ffffff;"></i>Devenir partenaire
+                        <i class="fa-solid fa-handshake-angle fa-2xs"></i>Devenir partenaire
                     </a>
                 </div>
-
                 <div class="légality">
                     <a href="#">
-                        Mentions légale
+                        <h5>Mentions légale</h5>
                     </a>
                     <a href="#">
-                        Contact
+                        <h5>Contact</h5>
                     </a>
                 </div>
             </div>
         </article>
     </footer>
-
 </body>
 
 </html>
