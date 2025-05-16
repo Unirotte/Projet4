@@ -48,11 +48,11 @@ h2 {
 }
 
 /*BACKGROUND*/
-section.card-restaurant {
+.card-restaurant {
   background: #f6f6f6;
 }
 
-section.title_restaurant {
+.title_restaurant {
   border-radius: 24px;
   background-color: #f6f6f6;
   bottom: 25px;
@@ -98,7 +98,7 @@ section.title_restaurant {
 .plat-click-zone {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 5;
   cursor: pointer;
 }
 
