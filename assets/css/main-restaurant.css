@@ -108,8 +108,8 @@ p {
   display: none;
 }
 
-/* place le bouton coeur plein */
-.button_coeur {
+/* place le bouton heart plein */
+.button_heart {
   position: relative;
   cursor: pointer;
   display: flex;
@@ -118,7 +118,7 @@ p {
 }
 
 /* défini les propriété de l'animation et la couleur ainsi que la taille */
-.button_coeur .fa-solid {
+.button_heart .fa-solid {
   position: absolute;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -133,13 +133,13 @@ p {
   justify-content: center;
 }
 
-.button_coeur:hover .fa-solid {
+.button_heart:hover .fa-solid {
   opacity: 1;
   transform: scale(1);
 }
 
-/* Rend le coeur apparent au click  */
-.checkbox_heart:checked + .button_coeur .fa-solid {
+/* Rend le heart apparent au click  */
+.checkbox_heart:checked + .button_heart .fa-solid {
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
@@ -313,7 +313,7 @@ h2 {
   align-items: center;
 }
 
-.contenaire-menu {
+.container-menu {
   position: relative;
   overflow: visible;
   width: 95%;
@@ -340,7 +340,7 @@ h2 {
   width: 100%;
 }
 
-.contenaire {
+.container {
   position: absolute;
   top: 0;
   right: 72px;
@@ -424,6 +424,10 @@ input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
+.glisse:hover .container {
+  animation: slide-12 0.3s ease-in-out forwards;
+}
+
 @keyframes slide-12 {
   from {
     transform: translateX(200%);
@@ -440,20 +444,16 @@ input:not(:checked) ~ .check-bg-3 {
     transform: translateX(200%);
   }
 }
-input:checked ~ .contenaire {
+input:checked ~ .container {
   animation: slide-12 0.3s ease-in-out forwards;
 }
 
-input:not(:checked) ~ .contenaire {
+input:not(:checked) ~ .container {
   animation: back-slide-12 0.3s ease-in-out forwards;
 }
 
 .glisse:hover .check-bg-3 {
   animation: slide 0.3s ease-in-out forwards;
-}
-
-.glisse:hover .contenaire {
-  animation: slide-12 0.3s ease-in-out forwards;
 }
 
 input:hover ~ .titles h3 {

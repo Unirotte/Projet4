@@ -98,8 +98,8 @@ p {
   }
 }
 
-/* place le bouton coeur plein */
-.button_coeur {
+/* place le bouton heart plein */
+.button_heart {
   position: relative;
   cursor: pointer;
   display: flex;
@@ -108,7 +108,7 @@ p {
 }
 
 /* défini les propriété de l'animation et la couleur ainsi que la taille */
-.button_coeur .fa-solid {
+.button_heart .fa-solid {
   position: absolute;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -126,13 +126,13 @@ p {
   justify-content: center;
 }
 
-.button_coeur:hover .fa-solid {
+.button_heart:hover .fa-solid {
   opacity: 1;
   transform: scale(1);
 }
 
-/* Rend le coeur apparent au click  */
-.checkbox_heart:checked + .button_coeur .fa-solid {
+/* Rend le heart apparent au click  */
+.checkbox_heart:checked + .button_heart .fa-solid {
   opacity: 1;
   transition: 0.5s ease-in-out;
 }

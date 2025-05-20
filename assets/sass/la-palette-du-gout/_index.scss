@@ -79,7 +79,7 @@ h2 {
   align-items: center;
 }
 
-.contenaire-menu {
+.container-menu {
   position: relative;
   overflow: visible;
   width: 95%;
@@ -106,7 +106,7 @@ h2 {
   width: 100%;
 }
 
-.contenaire {
+.container {
   position: absolute;
   top: 0;
   right: 72px;
@@ -190,6 +190,10 @@ input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
+.glisse:hover .container {
+  animation: slide-12 0.3s ease-in-out forwards;
+}
+
 @keyframes slide-12 {
   from {
     transform: translateX(200%);
@@ -206,20 +210,16 @@ input:not(:checked) ~ .check-bg-3 {
     transform: translateX(200%);
   }
 }
-input:checked ~ .contenaire {
+input:checked ~ .container {
   animation: slide-12 0.3s ease-in-out forwards;
 }
 
-input:not(:checked) ~ .contenaire {
+input:not(:checked) ~ .container {
   animation: back-slide-12 0.3s ease-in-out forwards;
 }
 
 .glisse:hover .check-bg-3 {
   animation: slide 0.3s ease-in-out forwards;
-}
-
-.glisse:hover .contenaire {
-  animation: slide-12 0.3s ease-in-out forwards;
 }
 
 input:hover ~ .titles h3 {
