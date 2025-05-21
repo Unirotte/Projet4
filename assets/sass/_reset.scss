@@ -9,18 +9,9 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
-  background-color: #f6f6f6;
-}
-
-@media (min-width: 1440px) {
-  section.operation .container_position,
-  section.restaurant .restaurant_container,
-  .operation-inner{
-    margin: auto;
-    max-width: 1440px;
-  }
+  max-width: 1440px;
+  margin: auto;
 }
 
 a {
@@ -41,3 +32,14 @@ $white: #ffffff;
 $black: #000000;
 $shadow-container: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 $shadow-button: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+//MEDIA
+
+@media (min-width: 1440px) {
+  section.operation .container_position,
+  section.restaurant .restaurant_container,
+  .operation-inner{
+    margin: auto;
+    max-width: 1440px;
+  }
+}

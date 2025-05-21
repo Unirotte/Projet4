@@ -50,6 +50,8 @@ h2 {
 /*BACKGROUND*/
 .card-restaurant {
   background: #f6f6f6;
+  max-width: 1055px;
+  margin: auto;
 }
 
 .title_restaurant {
@@ -236,6 +238,10 @@ input:hover ~ .titles h4 {
 
 .flex__btn {
   padding-bottom: 40px;
+  padding-bottom: 40px;
+  background: #f6f6f6;
+  max-width: 1055px;
+  margin: auto;
 }
 
 @media (min-width: 1024px) {
