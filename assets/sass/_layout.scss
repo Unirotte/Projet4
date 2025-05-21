@@ -30,6 +30,10 @@ p {
   position: relative;
   height: 63px;
   z-index: 10;
+  .header__img--logo {
+    width: 197px;
+    height: 36px;
+  }
 }
 
 // BUTTON NAV
@@ -191,10 +195,6 @@ i.fa-solid.fa-handshake-angle.fa-2xs {
     display: flex;
     align-items: center;
     box-shadow: none;
-  }
-  .header__img--logo {
-    width: 197px;
-    height: 36px;
   }
   footer {
     flex-direction: row-reverse;

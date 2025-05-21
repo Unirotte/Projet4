@@ -21,7 +21,7 @@ a {
   section.restaurant .restaurant_container,
   .operation-inner {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1053px;
   }
 }
 * {
@@ -52,6 +52,10 @@ p {
   position: relative;
   height: 63px;
   z-index: 10;
+}
+.header__logo .header__img--logo {
+  width: 197px;
+  height: 36px;
 }
 
 .flex__btn {
@@ -195,10 +199,6 @@ i.fa-solid.fa-handshake-angle.fa-2xs {
     display: flex;
     align-items: center;
     box-shadow: none;
-  }
-  .header__img--logo {
-    width: 197px;
-    height: 36px;
   }
   footer {
     flex-direction: row-reverse;
