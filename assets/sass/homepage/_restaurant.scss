@@ -94,18 +94,15 @@ section.restaurant {
     justify-content: center;
   }
 }
-
 @media (min-width: 1024px) {
   section.restaurant .restaurant_container {
     gap: 50px;
   }
-
   .container-div {
     gap: 100px;
     flex-direction: row;
   }
 }
-
 @media (min-width: 1440px) {
   .operation-inner {
     width: 75vw;
