@@ -48,11 +48,13 @@ h2 {
 }
 
 /*BACKGROUND*/
-section.card-restaurant {
+.card-restaurant {
   background: #f6f6f6;
+  max-width: 1055px;
+  margin: auto;
 }
 
-section.title_restaurant {
+.title_restaurant {
   border-radius: 24px;
   background-color: #f6f6f6;
   bottom: 25px;
@@ -73,19 +75,13 @@ section.title_restaurant {
   gap: 35px;
 }
 
-MENU article.menu {
-  margin-top: -40px;
-  padding-bottom: 24px;
-}
-
 .Positions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 15px;
 }
 
-.contenaire-menu {
+.container-menu {
   position: relative;
   overflow: visible;
   width: 95%;
@@ -94,17 +90,25 @@ MENU article.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.plat-click-zone {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  cursor: pointer;
 }
 
 .glisse {
   width: 100%;
 }
 
-.contenaire {
+.container {
   position: absolute;
   top: 0;
   right: 72px;
@@ -126,6 +130,7 @@ MENU article.menu {
   min-width: 50px;
   overflow: hidden;
   width: 100%;
+  cursor: pointer;
 }
 
 input:checked ~ .titles h3 {
@@ -187,9 +192,13 @@ input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
+.glisse:hover .container {
+  animation: slide-12 0.3s ease-in-out forwards;
+}
+
 @keyframes slide-12 {
   from {
-    transform: translateX(230%);
+    transform: translateX(200%);
   }
   to {
     transform: translateX(-40%);
@@ -200,23 +209,19 @@ input:not(:checked) ~ .check-bg-3 {
     transform: translateX(-40%);
   }
   to {
-    transform: translateX(230%);
+    transform: translateX(200%);
   }
 }
-input:checked ~ .contenaire {
+input:checked ~ .container {
   animation: slide-12 0.3s ease-in-out forwards;
 }
 
-input:not(:checked) ~ .contenaire {
+input:not(:checked) ~ .container {
   animation: back-slide-12 0.3s ease-in-out forwards;
 }
 
 .glisse:hover .check-bg-3 {
   animation: slide 0.3s ease-in-out forwards;
-}
-
-.glisse:hover .contenaire {
-  animation: slide-12 0.3s ease-in-out forwards;
 }
 
 input:hover ~ .titles h3 {
@@ -233,6 +238,10 @@ input:hover ~ .titles h4 {
 
 .flex__btn {
   padding-bottom: 40px;
+  padding-bottom: 40px;
+  background: #f6f6f6;
+  max-width: 1055px;
+  margin: auto;
 }
 
 @media (min-width: 1024px) {
@@ -259,4 +268,4 @@ input:hover ~ .titles h4 {
   section.card-restaurant {
     margin: 0px 150px;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=restaurant.css.map */
