@@ -192,9 +192,6 @@ input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
-@media (min-width: 768px) {
-}
-
 @keyframes slide-12 {
   from {
     transform: translateX(200%);
