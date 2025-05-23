@@ -124,11 +124,12 @@ p {
   justify-content: center;
 }
 
-.button_heart:hover .fa-solid {
-  opacity: 1;
-  transform: scale(1);
+@media (min-width: 768px) {
+  .button_heart:hover .fa-solid {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
-
 /* Rend le heart apparent au click  */
 .checkbox_heart:checked + .button_heart .fa-solid {
   opacity: 1;
@@ -416,10 +417,6 @@ input:not(:checked) ~ .check-bg-3 {
   animation: back-slide 0.3s ease-in-out forwards;
 }
 
-.glisse:hover .container {
-  animation: slide-12 0.3s ease-in-out forwards;
-}
-
 @keyframes slide-12 {
   from {
     transform: translateX(200%);
@@ -444,18 +441,20 @@ input:not(:checked) ~ .container {
   animation: back-slide-12 0.3s ease-in-out forwards;
 }
 
-.glisse:hover .check-bg-3 {
-  animation: slide 0.3s ease-in-out forwards;
+@media (min-width: 768px) {
+  .glisse:hover .container {
+    animation: slide-12 0.3s ease-in-out forwards;
+  }
+  .glisse:hover .check-bg-3 {
+    animation: slide 0.3s ease-in-out forwards;
+  }
+  input:hover ~ .titles h3 {
+    max-width: 60%;
+  }
+  input:hover ~ .titles h4 {
+    max-width: 50%;
+  }
 }
-
-input:hover ~ .titles h3 {
-  max-width: 60%;
-}
-
-input:hover ~ .titles h4 {
-  max-width: 50%;
-}
-
 .btn {
   width: 186px;
 }

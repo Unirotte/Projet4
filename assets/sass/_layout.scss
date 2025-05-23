@@ -115,9 +115,11 @@ p {
   justify-content: center;
 }
 
-.button_heart:hover .fa-solid {
-  opacity: 1;
-  transform: scale(1);
+@media (min-width: 768px) {
+  .button_heart:hover .fa-solid {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Rend le heart apparent au click  */
